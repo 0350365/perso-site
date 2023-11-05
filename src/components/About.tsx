@@ -1,30 +1,25 @@
 import styled from "styled-components";
-
-const SectionContentWrapper = styled.div`
-  position: relative;
-  padding-left: 15%;
-  padding-top: 2.5%;
-  font-family: "Computer Modern Serif";
-  color: black;
-`;
+import { SectionContentWrapper } from "../styles/section/section.styles";
 
 const NameMain = styled.p`
   position: relative;
   font-size: 6.5em;
   width: max-content;
   line-height: 1em;
+  font-family: "Computer Modern Serif";
 `;
 
 const NameSubHeading = styled.em`
   font-size: 1.5em;
   font-weight: 300;
+  font-family: "Computer Modern Serif";
 `;
 
 const AboutContent = styled.div`
   position: relative;
   top: 5em;
   font-size: 1.1rem;
-  width: 60vw;
+  width: 80vw;
   font-family: "Proxima Nova Condensed";
 `;
 

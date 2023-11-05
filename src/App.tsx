@@ -1,5 +1,4 @@
 import "./App.css";
-import "./styles/section.css";
 import Experience from "./components/Experience";
 import Photography from "./components/Photography";
 import About from "./components/About";
