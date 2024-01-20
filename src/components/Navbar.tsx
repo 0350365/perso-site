@@ -3,6 +3,7 @@ import {
   NavbarList,
   NavbarLink,
   NavbarListItem,
+  Divider,
 } from "../styles/navbar/navbar.styles.tsx";
 
 const sections: string[] = [
@@ -16,15 +17,17 @@ const sections: string[] = [
 const Navbar = () => {
   return (
     <FloatingNavbar>
+      <Divider />
       <NavbarList>
         {sections.map((sec) => (
           <NavbarListItem key={sec}>
             <NavbarLink href={`#${sec}`} key={sec}>
-              {sec.toUpperCase()}
+              {sec}
             </NavbarLink>
           </NavbarListItem>
         ))}
       </NavbarList>
+      <Divider />
     </FloatingNavbar>
   );
 };

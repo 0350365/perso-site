@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
-export const SectionContentWrapper = styled.div`
+export const SectionContentWrapper = styled.section`
   position: relative;
-  padding-left: 10%;
+  padding-left: 12%;
   padding-top: 3%;
-  color: black;
+  color: white;
+  margin: 0;
+  box-sizing: border-box;
 `;
 
 export const SectionHeader = styled.div`
   font-family: "Computer Modern Serif";
   font-size: 1.5rem;
   font-weight: 500;
-  text-decoration: underline;
   text-decoration-thickness: 2%;
 `;
