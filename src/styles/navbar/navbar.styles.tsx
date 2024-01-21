@@ -24,7 +24,7 @@ export const NavbarList = styled.ul`
 export const NavbarListItem = styled.li`
   height: 3em;
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 100;
   display: flex;
   justify-content: center;
@@ -44,7 +44,7 @@ export const NavbarLink = styled.a`
 const VerticalDivider = styled.div`
   height: 8em;
   width: 1px;
-  background-color: #ffffff42; /* You can adjust the color as needed */
+  background-color: #ffffff2a; /* You can adjust the color as needed */
 `;
 
 export const Divider = () => {

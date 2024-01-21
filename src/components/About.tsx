@@ -13,10 +13,13 @@ const NameMain = styled.p`
 
 const NameSubHeading = styled.em`
   position: relative;
+  display: grid;
   font-size: 1.2rem;
   font-family: "Computer Modern Serif";
-  top: 40%;
   line-height: 10px;
+  height: min-content;
+  top: -3rem;
+  grid-column: 1 / 1;
 `;
 
 const AboutContent = styled.div`
@@ -27,20 +30,30 @@ const AboutContent = styled.div`
   font-family: "Proxima Nova Condensed";
 `;
 
+const ImageStyles = styled.img`
+  position: relative;
+  left: 10%;
+  border-radius: 1rem;
+`;
+
 const About = () => {
   return (
     <>
-      <SectionContentWrapper id="about">
-        <NameMain>Jun Chao Yang</NameMain>
-        <NameSubHeading>
-          University of Waterloo // Computational Mathematics & Statistics
-        </NameSubHeading>
-        {/* <AboutContent>
+      <SectionContentWrapper>
+        <div id="about">
+          <NameMain>Jun Chao Yang</NameMain>
+          <NameSubHeading>
+            University of Waterloo // Computational Mathematics & Statistics
+          </NameSubHeading>
+
+          {/* <AboutContent>
           <b> Mathematics, programming, Full-Stack development and AI/ML/DL</b>.
           networking, data analysis, statistical modeling and inference, LLMs,
           web design, UI/UX, and many others . <br />
           <br />
         </AboutContent> */}
+          <ImageStyles src="src/assets/images/me.jpg" height={"700px"} />
+        </div>
       </SectionContentWrapper>
     </>
   );
