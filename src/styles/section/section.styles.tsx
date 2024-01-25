@@ -9,8 +9,10 @@ export const SectionContentWrapper = styled.section`
 `;
 
 export const SectionHeader = styled.div`
+  position: relative;
   font-family: "Computer Modern Serif";
   font-size: 1.5rem;
   font-weight: 500;
   text-decoration-thickness: 2%;
+  top: 1.5rem;
 `;

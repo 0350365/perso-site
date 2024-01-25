@@ -13,7 +13,7 @@ const Background = styled.div`
   width: 100%;
   height: 100%;
   background-image: url(../src/assets/images/me.jpg);
-  filter: blur(200px) opacity(0.25);
+  filter: blur(100px) opacity(0.35);
 `;
 
 function App() {

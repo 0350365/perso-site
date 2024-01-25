@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { SectionContentWrapper } from "../styles/section/section.styles";
+import { useEffect, useState } from "react";
 
 const NameMain = styled.p`
   position: absolute;
@@ -8,7 +9,7 @@ const NameMain = styled.p`
   line-height: 1rem;
   font-family: "Computer Modern Serif";
   margin-bottom: 0;
-  top: 32%;
+  top: 35%;
 `;
 
 const NameSubHeading = styled.em`
@@ -16,10 +17,7 @@ const NameSubHeading = styled.em`
   display: grid;
   font-size: 1.2rem;
   font-family: "Computer Modern Serif";
-  line-height: 10px;
   height: min-content;
-  top: -3rem;
-  grid-column: 1 / 1;
 `;
 
 const AboutContent = styled.div`
@@ -37,6 +35,16 @@ const ImageStyles = styled.img`
 `;
 
 const About = () => {
+  const [docHeight, setDocHeight] = useState<number>(window.innerHeight);
+
+  useEffect(() => {
+    addEventListener("resize", (e: Event) => {
+      const window = e.currentTarget as Window;
+      const height = window.innerHeight;
+      setDocHeight(height);
+    });
+  }, []);
+
   return (
     <>
       <SectionContentWrapper>
@@ -52,7 +60,10 @@ const About = () => {
           web design, UI/UX, and many others . <br />
           <br />
         </AboutContent> */}
-          <ImageStyles src="src/assets/images/me.jpg" height={"700px"} />
+          <ImageStyles
+            src="src/assets/images/me.jpg"
+            height={`${docHeight * 0.8}px`}
+          />
         </div>
       </SectionContentWrapper>
     </>
