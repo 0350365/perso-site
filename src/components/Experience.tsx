@@ -21,6 +21,21 @@ const Experience = () => {
               title="Software Developer Intern"
               start="May 2023"
               end="Aug 2023"
+              location="Montreal, QC"
+            />
+            <WorkExperience
+              company="MappedIn"
+              title="Software Developer Co-op"
+              start="Sept 2022"
+              end="Dec 2022"
+              location="Remote"
+            />
+            <WorkExperience
+              company="DRW"
+              title="Software Developer Intern"
+              start="Jan 2022"
+              end="Apr 2022"
+              location="Montreal, QC"
             />
           </ExperienceContentWrapper>
         </SectionContentWrapper>
