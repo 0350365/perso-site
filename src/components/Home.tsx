@@ -1,58 +1,19 @@
-import styled from "styled-components";
 import { SectionContentWrapper } from "../styles/section/section.styles";
 import { useEffect, useState } from "react";
-
-const NameMain = styled.p`
-  position: absolute;
-  font-size: 3rem;
-  width: max-content;
-  line-height: 1rem;
-  font-family: "Computer Modern Serif";
-  margin-bottom: 0;
-  top: 35%;
-`;
-
-const NameSubHeading = styled.em`
-  position: relative;
-  display: grid;
-  font-size: 1.2rem;
-  font-family: "Computer Modern Serif";
-  height: min-content;
-`;
-
-const AboutContent = styled.div`
-  position: relative;
-  top: 42%;
-  font-size: 1.1rem;
-  width: 75vw;
-  font-family: "Proxima Nova Condensed";
-`;
-
-const ImageStyles = styled.img`
-  position: relative;
-  left: 10%;
-  border-radius: 1rem;
-`;
-
 const About = () => {
-  const [docHeight, setDocHeight] = useState<number>(window.innerHeight);
-
-  useEffect(() => {
-    addEventListener("resize", (e: Event) => {
-      const window = e.currentTarget as Window;
-      const height = window.innerHeight;
-      setDocHeight(height);
-    });
-  }, []);
-
   return (
     <>
       <SectionContentWrapper>
-        <div id="home">
-          <NameMain>Jun Chao Yang</NameMain>
-          <NameSubHeading>
-            University of Waterloo // Computational Mathematics & Statistics
-          </NameSubHeading>
+        <div
+          id="home"
+          className="relative h-full w-11/12 grid grid-cols-2 items-center"
+        >
+          <div className="h-full flex flex-col justify-center gap-4 ml-20">
+            <div className=" text-5xl w-max top-40 font-cms">Jun Chao Yang</div>
+            <em className="font-cms text-lg h-min">
+              University of Waterloo // Computational Mathematics & Statistics
+            </em>
+          </div>
 
           {/* <AboutContent>
           <b> Mathematics, programming, Full-Stack development and AI/ML/DL</b>.
@@ -60,9 +21,9 @@ const About = () => {
           web design, UI/UX, and many others . <br />
           <br />
         </AboutContent> */}
-          <ImageStyles
+          <img
+            className="relative left-28 rounded-lg max-h-[80vh]"
             src="src/assets/images/me.jpg"
-            height={`${docHeight * 0.8}px`}
           />
         </div>
       </SectionContentWrapper>

@@ -7,6 +7,9 @@ export default {
         "default": "url(../src/assets/images/me.jpg)",
       },
     },
+    fontFamily: {
+      "cms": ['"Computer Modern Serif"'],
+    },
   },
   plugins: [],
 };
