@@ -48,7 +48,7 @@ const About = () => {
   return (
     <>
       <SectionContentWrapper>
-        <div id="about">
+        <div id="home">
           <NameMain>Jun Chao Yang</NameMain>
           <NameSubHeading>
             University of Waterloo // Computational Mathematics & Statistics
