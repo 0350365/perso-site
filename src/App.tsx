@@ -1,27 +1,14 @@
 import Experience from "./components/Experience";
 import Photography from "./components/Photography";
-import About from "./components/About";
+import About from "./components/Home";
 import Navbar from "./components/Navbar";
-import styled from "styled-components";
-
-const Background = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../src/assets/images/me.jpg);
-  filter: blur(100px) opacity(0.35);
-`;
 
 function App() {
   return (
     <>
       <Navbar />
       <div id="sectionWrapper">
-        <Background />
+        <div className="absolute top-0 left-0 m-0 p-0, w-full h-full bg-default blur-3xl opacity-35" />
         <About />
         <Experience />
         <Photography />
