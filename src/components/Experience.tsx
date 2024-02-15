@@ -5,7 +5,7 @@ import { WorkExperience } from "./WorkExperience";
 
 const ExperienceContentWrapper = styled.div`
   position: relative;
-  margin-top: 3%;
+  margin-top: 5rem;
   font-family: "Proxima Nova Condensed";
 `;
 
@@ -16,6 +16,13 @@ const Experience = () => {
         <SectionContentWrapper>
           <SectionHeader>EXPERIENCE</SectionHeader>
           <ExperienceContentWrapper>
+            <WorkExperience
+              company="Conversance"
+              title="Full-Stack Developer"
+              start="Jan 2024"
+              end="Apr 2024"
+              location="Waterloo, ON"
+            />
             <WorkExperience
               company="DRW"
               title="Software Developer Intern"

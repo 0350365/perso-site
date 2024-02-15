@@ -7,7 +7,7 @@ import {
 } from "../styles/navbar/navbar.styles.tsx";
 
 const sections: string[] = [
-  "about",
+  "home",
   "experience",
   "photography",
   "music",

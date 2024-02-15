@@ -1,11 +1,15 @@
 import styled from "styled-components";
 
 const ExperienceContainer = styled.div`
-  max-width: 90%;
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
   font-size: 1.4rem;
   margin-top: 1.5rem;
+  & div {
+    width: fit-content;
+  }
 `;
 
 const HRule = styled.hr`
