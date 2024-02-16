@@ -1,6 +1,19 @@
+import React from "react";
 import styled from "styled-components";
 
-export const SectionContentWrapper = styled.section`
+export const SectionContentWrapper = ({
+  children,
+}: {
+  children: React.JSX.Element;
+}) => {
+  return (
+    <section className="relative pl-40 m-0 text-white box-border">
+      {children}
+    </section>
+  );
+};
+
+styled.section`
   position: relative;
   padding-left: 12%;
   color: white;

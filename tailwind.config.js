@@ -56,7 +56,8 @@ export default {
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
-        "cms": ['"Computer Modern Serif"'],
+        cms: ['"Computer Modern Serif"'],
+        pxn: ['"Proxima Nova Condensed"'],
       },
       keyframes: {
         "accordion-down": {

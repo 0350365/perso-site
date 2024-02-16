@@ -1,5 +1,4 @@
 import { SectionContentWrapper } from "../styles/section/section.styles";
-import { useEffect, useState } from "react";
 const About = () => {
   return (
     <>
@@ -21,10 +20,12 @@ const About = () => {
           web design, UI/UX, and many others . <br />
           <br />
         </AboutContent> */}
-          <img
-            className="relative left-28 rounded-lg max-h-[80vh]"
-            src="src/assets/images/me.jpg"
-          />
+          <div className="relative left-32 flex">
+            <img
+              className=" rounded-lg max-h-[80vh]"
+              src="src/assets/images/me.jpg"
+            />
+          </div>
         </div>
       </SectionContentWrapper>
     </>

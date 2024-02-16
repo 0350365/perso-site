@@ -9,9 +9,9 @@ import {
 const sections: string[] = [
   "home",
   "experience",
-  "photography",
-  "music",
-  "projects",
+  // "photography",
+  // "music",
+  // "projects",
 ];
 
 const Navbar = () => {
