@@ -20,7 +20,7 @@ const About = () => {
           web design, UI/UX, and many others . <br />
           <br />
         </AboutContent> */}
-          <div className="relative left-32 flex">
+          <div className="relative left-32 flex w-2/3">
             <img
               className=" rounded-lg max-h-[80vh]"
               src="src/assets/images/me.jpg"
