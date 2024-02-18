@@ -1,5 +1,5 @@
 import { SectionContentWrapper } from "../styles/section/section.styles";
-const About = () => {
+const Home = () => {
   return (
     <>
       <SectionContentWrapper>
@@ -13,16 +13,9 @@ const About = () => {
               University of Waterloo // Computational Mathematics & Statistics
             </em>
           </div>
-
-          {/* <AboutContent>
-          <b> Mathematics, programming, Full-Stack development and AI/ML/DL</b>.
-          networking, data analysis, statistical modeling and inference, LLMs,
-          web design, UI/UX, and many others . <br />
-          <br />
-        </AboutContent> */}
-          <div className="relative left-32 flex w-2/3">
+          <div className="h-[280%] relative left-32 flex w-2/3">
             <img
-              className=" rounded-lg max-h-[80vh]"
+              className="sticky top-[10%] rounded-lg max-h-[80vh]"
               src="src/assets/images/me.jpg"
             />
           </div>
@@ -32,4 +25,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Home;

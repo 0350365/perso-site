@@ -1,25 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-
+import { cn } from "@/lib/utils";
 export const SectionContentWrapper = ({
   children,
+  className,
+  id,
 }: {
   children: React.JSX.Element;
+  className?: string;
+  id?: string;
 }) => {
   return (
-    <section className="relative pl-40 m-0 text-white box-border">
+    <section
+      className={cn("relative pl-40 m-0 text-white box-border", className)}
+      id={id}
+    >
       {children}
     </section>
   );
 };
-
-styled.section`
-  position: relative;
-  padding-left: 12%;
-  color: white;
-  margin: 0;
-  box-sizing: border-box;
-`;
 
 export const SectionHeader = styled.div`
   position: relative;
