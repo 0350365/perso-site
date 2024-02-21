@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Divider } from "../styles/navbar/navbar.styles.tsx";
-
+import { cn } from "@/lib/utils.ts";
 const sections: string[] = [
   "home",
   "about",
@@ -26,13 +26,11 @@ const Navbar = () => {
 
   // Uses user's scroll position to determine which section the user is on
   const getCurrentSection = () => {
-    if (scrollPosition < window.innerHeight / 2) return "home";
-    if (scrollPosition <= window.innerHeight) return "experience";
+    if (scrollPosition < window.innerHeight * (1 / 2)) return "home";
+    if (scrollPosition <= window.innerHeight * (3 / 2)) return "about";
+    if (scrollPosition <= window.innerHeight * 2.5) return "experience";
     return "home";
   };
-
-  console.log(getCurrentSection());
-  console.log(scrollPosition);
 
   return (
     <nav className="fixed h-full top-0 left-4 z-50 flex flex-col items-center justify-around">
@@ -41,11 +39,14 @@ const Navbar = () => {
         {sections.map((sec) => (
           <li
             key={sec}
-            className=" h-12 m-0 text-sm font-hairline flex justify-center"
+            className="h-12 m-0 text-sm font-hairline flex justify-center"
           >
             <a
               href={`#${sec}`}
-              className="inline-block no-underline text-gray-400 font-light transition-colors duration-300 hover:text-sky-500"
+              className={cn(
+                "inline-block no-underline text-gray-400 font-light transition-colors duration-300 hover:text-sky-500",
+                getCurrentSection() === sec ? "text-sky-500 " : ""
+              )}
             >
               {sec}
             </a>
