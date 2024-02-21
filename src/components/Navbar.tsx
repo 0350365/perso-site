@@ -45,7 +45,7 @@ const Navbar = () => {
           >
             <a
               href={`#${sec}`}
-              className="inline-block no-underline text-slate-300 font-light transition-colors duration-300 hover:text-slate-400"
+              className="inline-block no-underline text-gray-400 font-light transition-colors duration-300 hover:text-sky-500"
             >
               {sec}
             </a>
