@@ -10,6 +10,10 @@ export default function About() {
           Networking, data analysis, statistical modeling and inference, LLMs,
           UI/UX, and many others.
         </div>
+        <div className="mt-10">
+          I also play guitar (classical and electric), do photography and
+          videography, and produce music in my spare time :D
+        </div>
       </div>
     </SectionContentWrapper>
   );

@@ -19,7 +19,7 @@ const Home = () => {
             </em>
           </div>
           <div className="h-full flex">
-            <div className="h-[200%] relative left-32 flex w-2/3">
+            <div className="h-[190%] relative left-32 flex w-2/3">
               <img
                 className="sticky top-[10%] rounded-lg max-h-[80vh]"
                 src="src/assets/images/me.jpg"
