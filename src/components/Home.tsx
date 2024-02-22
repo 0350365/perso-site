@@ -4,6 +4,8 @@ import {
   LinkedInLogoIcon,
 } from "@radix-ui/react-icons";
 import { SectionContentWrapper } from "../styles/section/section.styles";
+import img from "../assets/images/me.jpg";
+
 const Home = () => {
   return (
     <>
@@ -22,12 +24,12 @@ const Home = () => {
             <div className="h-[190%] relative left-32 flex w-2/3">
               <img
                 className="sticky top-[10%] rounded-lg max-h-[80vh]"
-                src="src/assets/images/me.jpg"
+                src={img}
               />
             </div>
             <div className="absolute h-screen flex flex-col justify-center right-20 gap-7">
               <a href="https://www.linkedin.com/in/junchao-y/" target="_blank">
-                <LinkedInLogoIcon className="scale-125 cursor-pointer hover:text-blue-200 transition-colors" />
+                <LinkedInLogoIcon className="scale-125 cursor-pointer hover:text-sky-500 transition-colors" />
               </a>
 
               <a
@@ -35,10 +37,10 @@ const Home = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <InstagramLogoIcon className="scale-125 cursor-pointer hover:text-blue-200 transition-colors" />
+                <InstagramLogoIcon className="scale-125 cursor-pointer hover:text-sky-500 transition-colors" />
               </a>
               <a href="https://github.com/0350365" target="_blank">
-                <GitHubLogoIcon className="scale-125 cursor-pointer hover:text-blue-200 transition-colors" />
+                <GitHubLogoIcon className="scale-125 cursor-pointer hover:text-sky-500 transition-colors" />
               </a>
             </div>
           </div>
