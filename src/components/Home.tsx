@@ -33,7 +33,7 @@ const Home = () => {
               </a>
 
               <a
-                href="https://www.instagram.com/jun_chao/"
+                href="https://www.instagram.com/jun_chao.yang/"
                 target="_blank"
                 rel="noreferrer"
               >
