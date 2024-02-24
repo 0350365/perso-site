@@ -29,7 +29,7 @@ const Navbar = () => {
     if (scrollPosition < window.innerHeight * (1 / 2)) return "home";
     if (scrollPosition <= window.innerHeight * (3 / 2)) return "about";
     if (scrollPosition <= window.innerHeight * 2.5) return "experience";
-    return "home";
+    return "experience";
   };
 
   return (
@@ -44,8 +44,10 @@ const Navbar = () => {
             <a
               href={`#${sec}`}
               className={cn(
-                "inline-block no-underline text-gray-400 font-light transition-colors duration-300 hover:text-sky-500",
-                getCurrentSection() === sec ? "text-sky-500 " : ""
+                "inline-block no-underline font-light transition-colors duration-500 hover:text-sky-500",
+                getCurrentSection() === sec
+                  ? "text-violet-400 "
+                  : "text-gray-500"
               )}
             >
               {sec}
