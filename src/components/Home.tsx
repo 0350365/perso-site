@@ -12,7 +12,7 @@ const Home = () => {
       <SectionContentWrapper>
         <div
           id="home"
-          className="relative h-full w-11/12 grid grid-cols-2 items-center"
+          className="relative h-full w-full grid grid-cols-2 items-center"
         >
           <div className="h-full flex flex-col justify-center gap-4 ml-16">
             <div className=" text-5xl w-max top-40 font-cms">Jun Chao Yang</div>
@@ -20,14 +20,14 @@ const Home = () => {
               University of Waterloo // Computational Mathematics & Statistics
             </em>
           </div>
-          <div className="h-full flex">
-            <div className="h-[190%] relative left-32 flex w-2/3">
+          <div className="h-full flex  ">
+            <div className="h-[190%] relative ml-20 flex ">
               <img
                 className="sticky top-[10%] rounded-lg max-h-[80vh]"
                 src={img}
               />
             </div>
-            <div className="absolute h-screen flex flex-col justify-center right-20 gap-7">
+            <div className=" h-screen flex flex-col justify-center gap-7 grow mx-6">
               <a href="https://www.linkedin.com/in/junchao-y/" target="_blank">
                 <LinkedInLogoIcon className="scale-125 cursor-pointer hover:text-sky-500 transition-colors" />
               </a>
