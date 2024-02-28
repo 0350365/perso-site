@@ -23,15 +23,25 @@ const Home = () => {
           <div className="h-full flex  ">
             <div className="h-[190%] relative ml-20 flex ">
               <img
-                className="sticky top-[10%] rounded-lg max-h-[80vh]"
+                className="sm:hidden lg:block sticky top-[10%] rounded-lg max-h-[80vh] shrink-0"
                 src={img}
               />
             </div>
-            <div className=" h-screen flex flex-col justify-center gap-7 grow mx-6">
+            <div
+              className="sm:hidden lg:block relative text-sm text-cyan-900 text-end w-min font-pxn italic bottom-[15%]"
+              style={{ writingMode: "vertical-rl" }}
+            >
+              picture by{" "}
+              <span className="transition-colors hover:text-sky-800 cursor-pointer">
+                <a href="https://www.instagram.com/nailuj.may" target="_blank">
+                  @nailuj.may
+                </a>
+              </span>
+            </div>
+            <div className=" h-screen flex flex-col justify-center gap-8 grow mx-4">
               <a href="https://www.linkedin.com/in/junchao-y/" target="_blank">
                 <LinkedInLogoIcon className="scale-125 cursor-pointer hover:text-sky-500 transition-colors" />
               </a>
-
               <a
                 href="https://www.instagram.com/jun_chao.yang/"
                 target="_blank"
