@@ -1,15 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import { cn } from "@/lib/utils";
+
+interface SectionContentWrapperProps {
+  children: React.JSX.Element;
+  className?: string;
+  id?: string;
+}
 export const SectionContentWrapper = ({
   children,
   className,
   id,
-}: {
-  children: React.JSX.Element;
-  className?: string;
-  id?: string;
-}) => {
+}: SectionContentWrapperProps) => {
   return (
     <section
       className={cn("relative pl-40 m-0 text-white box-border", className)}
