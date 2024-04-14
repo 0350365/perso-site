@@ -1,27 +1,3 @@
-import styled from "styled-components";
-const ExperienceContainer = styled.div`
-  width: 90%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-around;
-  font-size: 1.4rem;
-  margin-top: 1.5rem;
-  transition: background-color 1s;
-  padding-bottom: 1rem;
-  & div {
-    width: fit-content;
-  }
-`;
-
-const HRule = styled.hr`
-  padding: 0;
-  width: 100%;
-  grid-column: 1/4;
-  height: 1px;
-  border: none;
-  background-color: #ffffff28;
-`;
-
 export const WorkExperience = ({
   company,
   title,
@@ -37,7 +13,7 @@ export const WorkExperience = ({
 }) => {
   return (
     <>
-      <ExperienceContainer>
+      <div className="w-[90%] grid grid-cols-3 justify-around text-2xl mt-6 transition-colors duration-1000 pb-4 [&_div]:w-fit">
         <div>
           <div className="font-bold">{company}</div>
           <div className="font-extralight">{`${title} `}</div>
@@ -46,8 +22,8 @@ export const WorkExperience = ({
         <div className="font-extralight flex items-center">
           {start} - {end}
         </div>
-        <HRule />
-      </ExperienceContainer>
+        <hr className="p-0 w-full col-start-1 col-end-4 h-[1px] border-none bg-gray-700" />
+      </div>
     </>
   );
 };
