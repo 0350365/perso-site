@@ -33,9 +33,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed sm:w-full md:w-4 md:h-full top-0 left-4 z-50 flex flex-row md:flex-col items-center justify-around">
+    <nav className="fixed w-full md:w-4 md:h-full top-4 md:top-0 left-4 z-50 flex flex-row md:flex-col items-center justify-around">
       <Divider />
-      <ul className="list-none pl-0 flex flex-col gap-7 h-max">
+      <ul className="list-none pl-0 flex flex-row md:flex-col gap-7 h-max">
         {sections.map((sec) => (
           <li
             key={sec}
@@ -44,12 +44,11 @@ const Navbar = () => {
             <a
               href={`#${sec}`}
               className={cn(
-                "inline-block no-underline font-light transition-colors duration-500 hover:text-sky-500 w-max",
+                "inline-block no-underline font-light transition-colors md:[writing-mode:vertical-rl] duration-500 hover:text-sky-500 w-max",
                 getCurrentSection() === sec
                   ? "text-violet-400 "
                   : "text-gray-500"
               )}
-              style={{ writingMode: "vertical-rl" }}
             >
               {sec}
             </a>
