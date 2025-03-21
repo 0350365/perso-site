@@ -33,7 +33,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed h-full top-0 left-4 z-50 flex flex-col items-center justify-around">
+    <nav className="fixed sm:w-full md:w-4 md:h-full top-0 left-4 z-50 flex flex-row md:flex-col items-center justify-around">
       <Divider />
       <ul className="list-none pl-0 flex flex-col gap-7 h-max">
         {sections.map((sec) => (
