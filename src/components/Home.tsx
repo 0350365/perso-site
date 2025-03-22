@@ -14,21 +14,21 @@ const Home = () => {
           id="home"
           className="relative h-full w-full grid grid-cols-2 items-center"
         >
-          <div className="h-full flex flex-col justify-center gap-4 ml-16">
+          <div className="h-full flex flex-col justify-center gap-4 md:ml-16">
             <div className=" text-5xl w-max top-40 font-cms">Jun Chao Yang</div>
             <em className="font-cms text-lg h-min">
               University of Waterloo // Computational Mathematics & Statistics
             </em>
           </div>
           <div className="h-full flex">
-            <div className="hidden lg:block h-[190%] relative ml-20">
+            <div className="hidden lg:block h-[220%] relative ml-20">
               <img
-                className=" sticky top-[10%] rounded-lg max-h-[80vh] w-auto h-auto object-contain"
+                className="sticky top-1/2 transform -translate-y-1/2 rounded-lg max-h-[70vh] h-auto object-contain"
                 src={img}
               />
             </div>
             <div
-              className="sm:hidden lg:block relative text-sm text-cyan-900 text-end w-min font-pxn bottom-[15%]"
+              className="hidden lg:block relative text-sm text-cyan-900 text-end w-min font-pxn bottom-[15%]"
               style={{ writingMode: "vertical-rl" }}
             >
               picture by{" "}

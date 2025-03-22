@@ -15,7 +15,7 @@ export const SectionContentWrapper = ({
   return (
     <section
       className={cn(
-        "relative h-[100vh] w-full md:pl-[10%] m-0 text-white box-border",
+        "relative h-[100vh] w-full pl-10 md:pl-[10%] m-0 text-white box-border",
         className
       )}
       id={id}
