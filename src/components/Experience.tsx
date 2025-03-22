@@ -4,10 +4,20 @@ import { WorkExperience } from "./WorkExperience";
 const Experience = () => {
   return (
     <>
-      <SectionContentWrapper id="experience" className="pt-12">
+      <SectionContentWrapper id="experience" className="h-max pb-40">
         <>
-          <SectionHeader>EXPERIENCE</SectionHeader>
-          <div className="relative mt-8 font-pxn h-1/2 flex flex-col justify-between">
+          <SectionHeader>Experience</SectionHeader>
+          <div className="relative font-pxn h-1/2 flex flex-col justify-between">
+            <WorkExperience
+              company="Radar"
+              title="Software Engineer Intern"
+              start="Sept 2024"
+              end="Dec 2024"
+              location="New York, NY"
+              description="Enhanced our AWS infrastructure to ensure high availability for a 
+              system handing 1B+ API calls daily. Architectured new fraud detection and management 
+              tools to improve user experience and meet various regulatory requirements."
+            />
             <WorkExperience
               company="Conversance"
               title="Full-Stack Developer"
