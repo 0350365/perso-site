@@ -20,15 +20,15 @@ const Home = () => {
               University of Waterloo // Computational Mathematics & Statistics
             </em>
           </div>
-          <div className="h-full flex  ">
-            <div className="h-[190%] relative ml-20 flex ">
+          <div className="h-full flex">
+            <div className="hidden lg:block h-[190%] relative ml-20">
               <img
-                className="sm:hidden lg:block sticky top-[10%] rounded-lg max-h-[80vh] shrink-0"
+                className=" sticky top-[10%] rounded-lg max-h-[80vh] w-auto h-auto object-contain"
                 src={img}
               />
             </div>
             <div
-              className="sm:hidden lg:block relative text-sm text-cyan-900 text-end w-min font-pxn italic bottom-[15%]"
+              className="sm:hidden lg:block relative text-sm text-cyan-900 text-end w-min font-pxn bottom-[15%]"
               style={{ writingMode: "vertical-rl" }}
             >
               picture by{" "}
