@@ -38,18 +38,27 @@ const Home = () => {
                 </a>
               </span>
             </div>
-            <div className=" h-screen flex flex-col justify-center gap-8 grow mx-4">
-              <a href="https://www.linkedin.com/in/junchao-y/" target="_blank">
+            <div className="h-screen flex flex-col justify-center gap-8 grow mx-4>">
+              <a
+                href="https://www.linkedin.com/in/junchao-y/"
+                target="_blank"
+                className="flex justify-center"
+              >
                 <LinkedInLogoIcon className="scale-125 cursor-pointer hover:text-sky-500 transition-colors" />
               </a>
               <a
                 href="https://www.instagram.com/jun_chao.yang/"
                 target="_blank"
                 rel="noreferrer"
+                className="flex justify-center"
               >
                 <InstagramLogoIcon className="scale-125 cursor-pointer hover:text-sky-500 transition-colors" />
               </a>
-              <a href="https://github.com/0350365" target="_blank">
+              <a
+                href="https://github.com/0350365"
+                target="_blank"
+                className="flex justify-center"
+              >
                 <GitHubLogoIcon className="scale-125 cursor-pointer hover:text-sky-500 transition-colors" />
               </a>
             </div>
