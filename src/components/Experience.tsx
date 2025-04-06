@@ -14,7 +14,7 @@ const Experience = () => {
               start="Sept 2024"
               end="Dec 2024"
               location="New York, NY"
-              description="Enhanced our AWS infrastructure to ensure high availability and fault tolerane for a 
+              description="Enhanced our AWS infrastructure to ensure high availability and fault tolerance for a 
               system handing 1B+ API calls daily. Architectured new fraud detection and management 
               tools to improve user experience and meet various regulatory requirements."
             />
