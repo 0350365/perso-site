@@ -38,7 +38,7 @@ const Home = () => {
                 </a>
               </span>
             </div>
-            <div className="h-screen flex flex-col justify-center gap-8 grow mx-4>">
+            <div className="h-screen flex flex-col justify-center gap-8 grow mx-4">
               <a
                 href="https://www.linkedin.com/in/junchao-y/"
                 target="_blank"
